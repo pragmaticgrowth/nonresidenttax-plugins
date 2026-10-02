@@ -62,7 +62,7 @@ the connector.
 - Claude never asks you for a password, SSN, ITIN or bank details. Payments,
   document uploads and signatures happen only in your dashboard at
   `https://app.nonresident.tax`.
-- Privacy policy: https://nonresident.tax/privacy-policy/
+- Read our privacy policy: [https://nonresident.tax/privacy-policy/](https://nonresident.tax/privacy-policy/)
 
 ## Important
 
