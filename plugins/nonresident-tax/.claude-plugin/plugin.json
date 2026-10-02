@@ -9,6 +9,7 @@
     "url": "https://nonresident.tax"
   },
   "homepage": "https://nonresident.tax",
+  "privacyPolicyUrl": "https://nonresident.tax/privacy-policy/",
   "repository": "https://github.com/pragmaticgrowth/nonresidenttax-plugins",
   "license": "SEE LICENSE IN LICENSE",
   "keywords": [
