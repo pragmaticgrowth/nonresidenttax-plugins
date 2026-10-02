@@ -1,7 +1,7 @@
 {
   "name": "nonresident-tax",
   "displayName": "Nonresident Tax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "US company formation and tax compliance for non-resident founders: look up Nonresident Tax services and their published prices, search the guides, and, once you sign in, check your own orders and active services. Read-only.",
   "author": {
     "name": "Nonresident Tax",
@@ -9,7 +9,6 @@
     "url": "https://nonresident.tax"
   },
   "homepage": "https://nonresident.tax",
-  "privacyPolicyUrl": "https://nonresident.tax/privacy-policy/",
   "repository": "https://github.com/pragmaticgrowth/nonresidenttax-plugins",
   "license": "SEE LICENSE IN LICENSE",
   "keywords": [
