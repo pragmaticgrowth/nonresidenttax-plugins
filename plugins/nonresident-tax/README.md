@@ -43,9 +43,10 @@ through it.
 The public tools work without an account. To use the two account tools, open
 the plugin's **Connectors** tab, choose **Nonresident Tax**, and sign in with
 your Nonresident Tax customer account. Sign-in happens on
-`https://app.nonresident.tax`, which asks you to approve Claude's read-only
-access. You can revoke that access at any time by disconnecting the
-connector.
+`https://app.nonresident.tax`, which asks you to approve Claude by name. The
+approval lets Claude call the connector's tools as you, and every one of those
+tools is read-only. You can revoke that access at any time by disconnecting
+the connector.
 
 ## Data and privacy
 

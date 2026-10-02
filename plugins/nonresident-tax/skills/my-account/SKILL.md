@@ -16,7 +16,8 @@ not connected, tell the customer:
 
 > Open this plugin's Connectors tab, choose Nonresident Tax, and sign in with
 > your Nonresident Tax customer account. The sign-in page is on
-> app.nonresident.tax and asks you to approve read-only access.
+> app.nonresident.tax and asks you to approve Claude. Every tool it unlocks
+> is read-only.
 
 Then stop until they say they are connected. Never ask for their password or
 a code in the chat.
@@ -24,7 +25,8 @@ a code in the chat.
 ## How to answer
 
 1. Call `list_my_orders`. Each order has an `id`, an `orderType`, a `status`,
-   a `packageType` and a `createdAt` date. Orders come newest first.
+   a `packageType` and a `createdAt` date. Orders come most recently updated
+   first, not by order date.
 2. If `truncated` is true, say only the most recent orders are shown and older
    ones exist.
 3. For plans and renewals, call `get_services_summary`. Each entry in
