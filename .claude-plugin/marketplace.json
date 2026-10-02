@@ -1,0 +1,16 @@
+{
+  "name": "nonresident-tax",
+  "description": "Nonresident Tax plugins for Claude: US company formation and tax compliance for non-resident founders.",
+  "owner": {
+    "name": "Nonresident Tax",
+    "email": "support@nonresident.tax",
+    "url": "https://nonresident.tax"
+  },
+  "plugins": [
+    {
+      "name": "nonresident-tax",
+      "source": "./plugins/nonresident-tax",
+      "description": "Look up Nonresident Tax services and published prices, search the guides, and check your own orders after you sign in. Read-only."
+    }
+  ]
+}

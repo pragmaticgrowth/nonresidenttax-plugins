@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "nonresident-tax": {
+      "type": "http",
+      "url": "https://nonresident.tax/mcp"
+    }
+  }
+}

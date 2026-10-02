@@ -1,0 +1,23 @@
+{
+  "name": "nonresident-tax",
+  "displayName": "Nonresident Tax",
+  "version": "1.0.0",
+  "description": "US company formation and tax compliance for non-resident founders: look up Nonresident Tax services and their published prices, search the guides, and, once you sign in, check your own orders and active services. Read-only.",
+  "author": {
+    "name": "Nonresident Tax",
+    "email": "support@nonresident.tax",
+    "url": "https://nonresident.tax"
+  },
+  "homepage": "https://nonresident.tax",
+  "repository": "https://github.com/pragmaticgrowth/nonresidenttax-plugins",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "us-llc",
+    "company-formation",
+    "non-resident",
+    "form-5472",
+    "wyoming",
+    "delaware",
+    "tax-compliance"
+  ]
+}
