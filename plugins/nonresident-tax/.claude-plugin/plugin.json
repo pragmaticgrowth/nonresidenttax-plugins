@@ -10,6 +10,9 @@
   },
   "homepage": "https://nonresident.tax",
   "privacyPolicyUrl": "https://nonresident.tax/privacy-policy/",
+  "termsOfServiceUrl": "https://nonresident.tax/terms-of-service/",
+  "supportUrl": "https://nonresident.tax/contact-us/",
+  "documentationUrl": "https://github.com/pragmaticgrowth/nonresidenttax-plugins/blob/main/plugins/nonresident-tax/README.md",
   "repository": "https://github.com/pragmaticgrowth/nonresidenttax-plugins",
   "license": "SEE LICENSE IN LICENSE",
   "keywords": [
