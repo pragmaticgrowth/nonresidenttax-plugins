@@ -32,13 +32,13 @@ The plugin declares one remote MCP server, `nonresident-tax`, at
 on it is read-only: nothing can be ordered, paid, signed, uploaded or changed
 through it.
 
-| Tool                   | Sign-in needed | What it reads                                               |
-| ---------------------- | -------------- | ----------------------------------------------------------- |
-| `list_services`        | No             | The list of services published on nonresident.tax           |
-| `get_service_info`     | No             | One service page as markdown, including the price it states |
-| `search_guides`        | No             | Guide titles and links that match a keyword                 |
-| `list_my_orders`       | Yes            | Your own orders: type, status, package and date             |
-| `get_services_summary` | Yes            | Your own active plans and renewal dates                     |
+| Tool                   | Sign-in needed | What it reads                                                                           |
+| ---------------------- | -------------- | --------------------------------------------------------------------------------------- |
+| `list_services`        | No             | The list of services published on nonresident.tax                                       |
+| `get_service_info`     | No             | One service page as markdown, including the price it states                             |
+| `search_guides`        | No             | Guide titles and links that match a keyword                                             |
+| `list_my_orders`       | Yes            | Your own orders: type, status, package and date                                         |
+| `get_services_summary` | Yes            | Your own active plans, renewal dates, bookkeeping questions and bank connections to fix |
 
 The public tools work without an account. To use the two account tools, open
 the plugin's **Connectors** tab, choose **Nonresident Tax**, and sign in with

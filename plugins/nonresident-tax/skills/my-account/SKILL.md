@@ -32,6 +32,12 @@ a code in the chat.
 3. For plans and renewals, call `get_services_summary`. Each entry in
    `activeSubscriptions` has a `plan` and a `currentPeriodEnd`: the date the
    current paid period ends and the plan renews, unless it was cancelled.
+   When it has a `bookkeeping` list, each entry gives a `companyName`, the
+   `openQuestions` waiting on the customer and the `connectionsNeedingAttention`
+   (bank connections that need a new sign-in, are disconnecting, are revoked
+   or have new accounts to add). Say that questions are answered, and
+   connections reconnected, in the customer's Accounting section. Without a
+   `bookkeeping` list, the customer has no bookkeeping set up.
 4. Answer in plain words. Turn raw values into readable ones (`in_progress`
    becomes "in progress", `federal_tax` becomes "federal tax filing") and give
    dates as dates, for example "12 March 2027". Do not show internal ids,
