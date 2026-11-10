@@ -53,12 +53,17 @@ the connector.
 - The plugin contains no code, hooks or scripts. It is Markdown instructions
   for Claude, the connector address above, and the listing icon.
 - Claude sends tool calls only to `https://nonresident.tax/mcp`. Sign-in uses
-  standard OAuth with PKCE on `https://app.nonresident.tax`. Nothing is sent
-  to any other service.
+  standard OAuth with PKCE on `https://app.nonresident.tax`. Claude sends
+  nothing to any other service.
 - The account tools return only the signed-in customer's own records. The
   plugin stores nothing and keeps no history of its own. The MCP server keeps
   routine request logs (time, path, status, errors) for troubleshooting, for
   under 30 days; it does not store tool results.
+- For each tool call the MCP server sends one usage event to our product
+  analytics (Mixpanel), with the tool name, whether it succeeded, whether
+  you were signed in and how long it took; it carries no tool arguments, IP
+  address or tool results, and it is tied to your account id when you are
+  signed in.
 - Claude never asks you for a password, SSN, ITIN or bank details. Payments,
   document uploads and signatures happen only in your dashboard at
   `https://app.nonresident.tax`.
