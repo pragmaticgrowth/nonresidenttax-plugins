@@ -38,19 +38,34 @@ a code in the chat.
    or have new accounts to add). Say that questions are answered, and
    connections reconnected, in the customer's Accounting section. Without a
    `bookkeeping` list, the customer has no bookkeeping set up.
-4. Answer in plain words. Turn raw values into readable ones (`in_progress`
+4. For "what do I need to do next", call `list_my_next_actions`. Each entry in
+   `actions` is one step waiting on the customer, with a `title`, the
+   `companyId`, an `orderId` when it belongs to an order, sometimes a
+   `waitingSince` date, and a `url`: the dashboard screen where they finish
+   it. Give the title and read the `url` out exactly as returned; never build
+   or change a link yourself. An empty list means nothing is waiting on them
+   right now: every open order is with the Nonresident Tax team or done. If
+   `truncated` is true, say more steps exist and the dashboard lists them all.
+   Its bookkeeping steps are the same questions and connections
+   `get_services_summary` counts, so the two always agree. If the call answers
+   that next steps are temporarily unavailable, say so and suggest trying again
+   in a few minutes or opening `https://app.nonresident.tax`.
+5. Answer in plain words. Turn raw values into readable ones (`in_progress`
    becomes "in progress", `federal_tax` becomes "federal tax filing") and give
    dates as dates, for example "12 March 2027". Do not show internal ids,
    price ids or field names unless the customer asks for them.
-5. When the customer has several orders, lead with the one they asked about,
+6. When the customer has several orders, lead with the one they asked about,
    then list the rest briefly.
 
 ## What these tools do not show
 
-- They do not show documents, messages from the team, the exact step a filing
-  is on, tax deadlines for a specific return, or what the customer still has
-  to send. For those, send the customer to their dashboard at
-  `https://app.nonresident.tax`, where every next step and upload lives.
+- They do not show documents, messages from the team, tax deadlines for a
+  specific return, prices or amounts due. `list_my_next_actions` names the
+  steps for federal tax filings, state filings and bookkeeping only; other
+  steps (company formation and SS-4 signing, a registered agent change, an
+  EIN name correction, closing a company, onboarding, mail) are not in it yet.
+  For those, and to upload or pay, send the customer to their dashboard at
+  `https://app.nonresident.tax`, where every step and upload lives.
 - `activePayments` lists internal price ids. Do not read them out; say "your
   dashboard's billing page lists every payment".
 - If the records look wrong or a status has not moved for a long time, suggest

@@ -38,9 +38,10 @@ through it.
 | `get_service_info`     | No             | One service page as markdown, including the price it states                             |
 | `search_guides`        | No             | Guide titles and links that match a keyword                                             |
 | `list_my_orders`       | Yes            | Your own orders: type, status, package and date                                         |
+| `list_my_next_actions` | Yes            | What you still have to do, each step with a link to the dashboard screen for it         |
 | `get_services_summary` | Yes            | Your own active plans, renewal dates, bookkeeping questions and bank connections to fix |
 
-The public tools work without an account. To use the two account tools, open
+The public tools work without an account. To use the three account tools, open
 the plugin's **Connectors** tab, choose **Nonresident Tax**, and sign in with
 your Nonresident Tax customer account. Sign-in happens on
 `https://app.nonresident.tax`, which asks you to approve Claude by name. The
